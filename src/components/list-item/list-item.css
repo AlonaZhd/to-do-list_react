@@ -1,0 +1,93 @@
+.list-item {
+    background-color: rgb(248, 190, 247);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.268);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    letter-spacing: 3px;
+}
+
+.list-item_btn {
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+}
+
+.list-item--empty {
+    color: hsla(0, 0%, 17%, 0.599);
+    letter-spacing: 5px;
+    padding: 30px 20px;
+}
+
+.btn-delete {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    background-color: #f63e3e;
+}
+
+.btn-delete:hover {
+    background-color: #ff5f5f;
+}
+
+.btn-delete::before,
+.btn-delete::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 3px;
+    background-color: white;
+    top: 45%;
+    left: 8px;
+}
+
+.btn-delete::before {
+    transform: rotate(45deg);
+}
+
+.btn-delete::after {
+    transform: rotate(-45deg);
+}
+
+.btn-edit {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    background-color: #2cb05e;
+}
+
+.btn-edit:hover {
+    background-color: #4cc47a;
+}
+
+.btn-edit::before,
+.btn-edit::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: white;
+}
+
+.btn-edit::before {
+    height: 10px;
+    left: 35%;
+    top: 40%;
+    transform-origin: left center;
+    transform: rotate(-35deg);
+}
+
+.btn-edit::after {
+    height: 15px;
+    left: 62%;
+    top: 25%;
+    transform-origin: left center;
+    transform: rotate(-155deg);
+}
